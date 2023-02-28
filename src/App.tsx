@@ -4,14 +4,15 @@ function App() {
   if (userAgent.indexOf("Android") >= 0) {
     if (userAgent.indexOf("KAKAOTALK") >= 0) {
       alert("현재 접속중인 브라우저는 카카오톡 인앱 브라우저입니다.");
-      window.location.href = "naversearchapp://default?version=5"
+      // window.location.href = "naversearchapp://default?version=5" // 네이버 앱으로 정상 연결
+      window.location.href = "colavosalon://"
     } else if (userAgent.indexOf("Instagram") >= 0) {
       alert("현재 접속중인 브라우저는 인스타 인앱 브라우저입니다.");
     } else if (userAgent.indexOf("NAVER") >= 0) {
       alert("현재 접속중인 브라우저는 모바일 네이버 앱입니다.");
     } else {
       alert("현재 접속중인 브라우저는 모바일 크롬입니다.");
-      window.location.href = "naversearchapp://default?version=1"
+      window.location.href = "naversearchapp://default?version=1" // 크롬, 네이버중 선택창뜸. 크롬 선택하면 아무 동작 없음
     }
   }
 
