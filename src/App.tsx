@@ -1,14 +1,11 @@
-import axios from "axios";
-
 function App() {
   const userAgent = navigator.userAgent;
-  // console.log(userAgent);
 
   // if (userAgent.match(/Mozilla/)) {
   // }
 
   const handleButtonClick = async () => {
-    console.log("click!")
+    alert(userAgent)
   }
 
   return (
