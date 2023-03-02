@@ -5,13 +5,14 @@ function App() {
   if (userAgent.indexOf("KAKAOTALK") >= 0) {
     alert("현재 접속중인 브라우저는 카카오톡 인앱 브라우저입니다.");
     window.location.href = "naversearchapp://default?version=1" // 네이버 앱으로 정상 연결
-  } else if (userAgent.indexOf("CriOS") >= 0) {
-    alert("현재 접속중인 브라우저는 IOS 크롬 브라우저입니다.");
-    window.location.href = url
   }
+  // else if (userAgent.indexOf("CriOS") >= 0) {
+  //   window.location.href = url
+  // }
 
   const handleButtonClick = async () => {
     if (userAgent.indexOf("CriOS") >= 0) {
+      alert("현재 접속중인 브라우저는 IOS 크롬 브라우저입니다. 콜라보 살롱 앱으로 연결!");
       window.location.href = url
     } else {
       alert(`미지원 기기 : ${userAgent}`);
